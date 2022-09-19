@@ -11,8 +11,16 @@ class TheTable extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "DATA TABLE",
       home: Scaffold(
-        body: Column(mainAxisAlignment: MainAxisAlignment.start,
-          children: [Text("Table",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color:Colors.blueAccent),),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Text(
+              "Table",
+              style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blueAccent),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -36,22 +44,24 @@ class TheTable extends StatelessWidget {
                       )),
                       DataCell(Text("MMMUT", style: TextStyle(fontSize: 23))),
                       DataCell(Text("CSE", style: TextStyle(fontSize: 23)))
-                    ])
-                  ,DataRow(cells: [
+                    ]),
+                    DataRow(cells: [
                       DataCell(Text(
                         "B.Tech",
                         style: TextStyle(fontSize: 23),
                       )),
                       DataCell(Text("HBTU", style: TextStyle(fontSize: 23))),
                       DataCell(Text("IT", style: TextStyle(fontSize: 23)))
-                    ]),DataRow(cells: [
+                    ]),
+                    DataRow(cells: [
                       DataCell(Text(
                         "B.Tech",
                         style: TextStyle(fontSize: 23),
                       )),
                       DataCell(Text("IET", style: TextStyle(fontSize: 23))),
                       DataCell(Text("ME", style: TextStyle(fontSize: 23)))
-                    ])],
+                    ])
+                  ],
                 ),
               ],
             ),
